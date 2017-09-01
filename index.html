@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/32cc6c2324.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Amiko" rel="stylesheet">
+</head>
+
+<body>
+
+     <div class="container">
+            <h1>Tic-Tac-Toe</h1>
+            <ul id="game">
+                <!-- first row -->
+                <li data-pos="0,0"></li>
+                <li data-pos="0,1"></li>
+                <li data-pos="0,2"></li>
+                <!-- second row -->
+                <li data-pos="1,0"></li>
+                <li data-pos="1,1"></li>
+                <li data-pos="1,2"></li>
+                <!-- third row -->
+                <li data-pos="2,0"></li>
+                <li data-pos="2,1"></li> 
+                <li data-pos="2,2"></li>
+            </ul>
+            
+            <button id="reset-game">Reset Game</button>
+            
+            <!-- Game Messages -->
+            <div id="game-messages">
+                <span class="player-x-win">Player One Wins</span>
+                <span class="player-o-win">Player Two Wins</span>
+                <span class="draw">Draw Game</span>
+            </div>
+            
+            <aside id="nfo">
+                <h2>Who's Turn</h2>
+                <div id="whos-turn" class="x">
+                    <span class="x">Player 1</span>
+                    <span class="o">Player 2</span>
+                </div>
+                
+                <h2>Score Card</h2>
+                <div id="score">
+                    Player 1: <span id="player-one-score">0</span> <br />
+                    Player 2: <span id="player-two-score">0</span> <br />
+                </div>
+            </aside>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/angular.headroom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.js"></script>
+    <script src='js/main.js'></script>
+   
+</body>
+
+</html>
